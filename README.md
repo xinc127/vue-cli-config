@@ -1,29 +1,10 @@
-# mocha-vue-cli
+# vue-cli-template
+> 使用 vue-cli3 搭建的vue-vuex-router-element 开发模版，集成常用组件，功能模块
 
-## Project setup
-```
-npm install
-```
+## 一、官方 Vue-CLI3 初始化项目
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 二、实现的功能模块
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 1. 自动注册全局组件
+### 2. 自动扫描路由
+### 3. 
