@@ -1,11 +1,9 @@
 <template>
   <div>
     <header-top 
+          :head-title="headTitle" 
     
-    :head-title="headTitle" 
-    
-    
-    :head-back="true"
+          :head-back="true"
     ></header-top>
     <section class="sort-container">
       <!-- 分类 -->
@@ -76,10 +74,10 @@
 </template>
 
 <script>
-import headerTop from '@/components/header/header.vue';
-import shopList from '@/components/common/shoplist.vue'
-import { mapState, mapMutations } from 'vuex';
-import { getShopTypes, msiteAddress } from '@/api/api'
+import headerTop from '@/components/header/header.vue'
+import shopList from '@/components/common/shoplist.vue';
+import { mapState, mapMutations } from 'vuex'
+import { getShopTypes, msiteAddress } from '@/api/api';
 
 export default {
   data() {
@@ -87,30 +85,30 @@ export default {
       sortType: 'food', // 下拉标签
       sortTypes: [],
            headTitle: '',
-      geohash: '',
+                 geohash: '',
       restaurant_category_id: '', // 分类id
-      currentCategoryName: '', // 当前选择分类
+           currentCategoryName: '', // 当前选择分类
       currentCategoryIndex: '', // 当前选择分类序号
       currentCategory: this.shopTypes(this.currentCategoryIndex),
     }
   },
   components: {
     shopList,
-    headerTop,
+         headerTop,
   },
   computed: {
-    ...mapState(['latitude', 'longitude']),
+          ...mapState(['latitude', 'longitude']),
   },
   mounted() {
     console.log(this.sortType);
-    this.initData()
+         this.initData()
   },
   methods: {
     ...mapMutations(['RECORD_ADDRESS', 'SAVE_GEOHASH']),
-    async initData  () {
-      // 从msite页面传过来的数据
+    async  initData  () {
+            // 从msite页面传过来的数据
       this.geohash = this.$route.query.geohash
-      this.headTitle = this.$route.query.title
+         this.headTitle = this.$route.query.title
       this.restaurant_category_id = this.$route.query.restaurant_category_id
       // 防止页面刷新，vuex数据丢失
       if (!this.latitude) {
