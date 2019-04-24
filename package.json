@@ -50,7 +50,7 @@
   },
   "lint-staged": {
     "linters": {
-      "src/*.{js, vue}": ["eslint"]
+      "src/*.{js, vue}": "eslint"
     }
   }
 }
