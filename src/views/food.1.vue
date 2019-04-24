@@ -1,8 +1,6 @@
 <template>
   <div>
-    <header-top
-      :head-title="headTitle"
-      :head-back="true"
+    <header-top :head-title="headTitle" :head-back="true"
     ></header-top>
     <section class="sort-container">
       <!-- 分类 -->
@@ -54,13 +52,13 @@
       <!-- 排序 -->
       <div class="sort-item">
         <div
-          class="sort-item-border"
+                 class="sort-item-border"
           @click="changeType('sort')"
         >
           <span :class="{ 'active-title': sortType == 'sort' }">排序</span>
         </div>
         <section
-          v-show="sortType == 'sort'"
+                  v-show="sortType == 'sort'"
           class="sort-detail"
         >
           排序详情
@@ -74,9 +72,9 @@
 
 <script>
 import headerTop from '@/components/header/header.vue'
-import shopList from '@/components/common/shoplist.vue'
-import { mapState, mapMutations } from 'vuex'
-import { getShopTypes, msiteAddress } from '@/api/api'
+import shopList from '@/components/common/shoplist.vue';
+import { mapState, mapMutations } from 'vuex';
+import { getShopTypes, msiteAddress } from '@/api/api';
 
 export default {
   data() {
