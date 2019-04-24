@@ -49,9 +49,11 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
+    "linters": {
       "*.{js, json, css, vue}": [
         "prettier --write",
         "eslint"
       ]
+    }
   }
 }

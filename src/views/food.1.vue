@@ -1,9 +1,9 @@
 <template>
   <div>
     <header-top 
-   :head-title="headTitle" 
+       :head-title="headTitle" 
     
-     :head-back="true"
+         :head-back="true"
     ></header-top>
     <section class="sort-container">
       <!-- 分类 -->
@@ -74,14 +74,14 @@
 </template>
 
 <script>
-import headerTop from '@/components/header/header.vue'
-import shopList from '@/components/common/shoplist.vue'
+import headerTop from '@/components/header/header.vue';
+import shopList from '@/components/common/shoplist.vue';
 import { mapState, mapMutations } from 'vuex';
 
 import { getShopTypes, msiteAddress } from '@/api/api'
 
 export default {
-  data {
+  data   {
     return {
       sortType: 'food', // 下拉标签
       sortTypes: [],
