@@ -81,7 +81,7 @@ import { mapState, mapMutations } from 'vuex';
 import { getShopTypes, msiteAddress } from '@/api/api'
 
 export default {
-  data     {
+  data sdfs {
     return {
       sortType: 'food', // 下拉标签
       sortTypes: [],
@@ -92,7 +92,7 @@ export default {
       currentCategoryIndex: '', // 当前选择分类序号
       currentCategory: this.shopTypes(this.currentCategoryIndex),
     }
-  },  
+  },  safsafd
   components: {
     shopList,
          headerTop,
