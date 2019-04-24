@@ -46,11 +46,12 @@
     }
   },
   "gitHooks": {
-    "pre-commit": "eslint \"src/**/*.{js,ts,vue}\""
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
       "*.{js, json, css, vue}": [
-        "prettier --write"
+        "prettier --write",
+        "eslint"
       ]
   }
 }
