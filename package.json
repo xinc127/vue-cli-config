@@ -30,6 +30,7 @@
     "chalk": "^2.4.2",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "lint-staged": "^8.1.5",
     "postcss-px-to-viewport": "^0.0.3",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
@@ -46,5 +47,14 @@
   },
   "gitHooks": {
     "pre-commit": "eslint \"src/**/*.{js,ts,vue}\""
+  },
+  "lint-staged": {
+    "linter": {
+      "*.{js, json, css, vue}": [
+        "eslint",
+        "prettier --writer",
+        "git add"
+      ]
+    }
   }
 }

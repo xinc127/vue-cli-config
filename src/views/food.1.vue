@@ -36,21 +36,6 @@
           </ul>
         </section>
       </div>
-      <!-- 排序 -->
-      <div class="sort-item">
-        <div
-          class="sort-item-border"
-          @click="changeType('sort')"
-        >
-          <span :class="{ 'active-title': sortType == 'sort' }">排序</span>
-        </div>
-        <section
-          v-show="sortType == 'sort'"
-          class="sort-detail"
-        >
-          排序详情
-        </section>
-      </div>
       <!-- 筛选 -->
       <div class="sort-item">
         <div
@@ -64,6 +49,21 @@
           class="sort-detail"
         >
           筛选详情
+        </section>
+      </div>
+      <!-- 排序 -->
+      <div class="sort-item">
+        <div
+          class="sort-item-border"
+          @click="changeType('sort')"
+        >
+          <span :class="{ 'active-title': sortType == 'sort' }">排序</span>
+        </div>
+        <section
+          v-show="sortType == 'sort'"
+          class="sort-detail"
+        >
+          排序详情
         </section>
       </div>
     </section>
