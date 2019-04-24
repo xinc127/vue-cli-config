@@ -1,15 +1,14 @@
 <template>
-  <div class="slidebar">
-    slidebar组件
+  <div class="BaseIcon">
+    BaseIcon组件
   </div>
 </template>
 <script>
 export default {
-  name: 'slidebar'
+  name: 'BaseIcon',
 }
 </script>
 <style lang="scss" scoped>
-.slidebar {
-
+.BaseIcon {
 }
 </style>

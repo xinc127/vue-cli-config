@@ -1,5 +1,5 @@
 # vue-cli-template
-> 使用 vue-cli3 搭建的vue-vuex-router-element 开发模版，集成常用组件，功能模块
+> 使用 vue-cli3 搭建的vue-vuex-router-cubeui 开发模版，集成常用组件，功能模块
 
 ## 一、官方 Vue-CLI3 初始化项目
 
@@ -27,6 +27,13 @@
 - 主题定制
 - 后编译
   
-### 6. mixin 使用
+## 6. mixin 使用
 
-### 7.
+### 7. vuex 使用
+
+### 8. prettier&&eslint
+
+- 代码检查&&格式化
+- GitHooks 代码提交前自检
+- 
+

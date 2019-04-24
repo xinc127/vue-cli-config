@@ -2,18 +2,18 @@ import request from './http'
 
 const article = {
   // 新闻列表
-  articleList () {
+  articleList() {
     return request({
-      url: '/get/articles'
+      url: '/get/articles',
     })
   },
   // 新闻详情
-  articleDetail (id, params) {
+  articleDetail(id, params) {
     return request({
       url: `/get/article/${id}`,
-      params
+      params,
     })
-  }
+  },
 }
 
 export default article

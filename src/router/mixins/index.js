@@ -1,6 +1,6 @@
 export default [
   {
     path: '/mixins',
-    component: () => import('@/views/mixins/mixins.vue')
-  }
+    component: () => import('@/views/mixins/mixins.vue'),
+  },
 ]

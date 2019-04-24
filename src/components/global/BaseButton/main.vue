@@ -1,15 +1,14 @@
 <template>
-  <div class="cities.vue">
-    cities.vue组件
+  <div class="BaseButton">
+    <button>base-button</button>
   </div>
 </template>
 <script>
 export default {
-  name: 'cities.vue'
+  name: 'BaseButton',
 }
 </script>
 <style lang="scss" scoped>
-.cities.vue {
-
+.BaseButton {
 }
 </style>

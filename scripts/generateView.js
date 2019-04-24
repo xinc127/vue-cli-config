@@ -27,7 +27,9 @@ const generateFile = (path, data) => {
 log('请输入要生成的页面组件名称、会生成在 views/目录下')
 let componentName = ''
 process.stdin.on('data', async chunk => {
-  const inputName = String(chunk).trim().toString()
+  const inputName = String(chunk)
+    .trim()
+    .toString()
   /**
    * Vue页面组件路径
    */
@@ -69,21 +71,21 @@ process.stdin.on('end', () => {
   log('exit')
   process.exit()
 })
-function dotExistDirectoryCreate (directory) {
-  return new Promise((resolve) => {
-    mkdirs(directory, function () {
+function dotExistDirectoryCreate(directory) {
+  return new Promise(resolve => {
+    mkdirs(directory, function() {
       resolve(true)
     })
   })
 }
 
 // 递归创建目录
-function mkdirs (directory, callback) {
+function mkdirs(directory, callback) {
   var exists = fs.existsSync(directory)
   if (exists) {
     callback()
   } else {
-    mkdirs(path.dirname(directory), function () {
+    mkdirs(path.dirname(directory), function() {
       fs.mkdirSync(directory)
       callback()
     })

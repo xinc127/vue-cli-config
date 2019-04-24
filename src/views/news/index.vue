@@ -7,28 +7,25 @@
 </template>
 
 <script>
-
 export default {
-  data () {
+  data() {
     return {
-      file: null
+      file: null,
     }
   },
-  mounted () {
+  mounted() {
     this.$api.article.articleList().then(res => {
       console.log(res)
     })
   },
   methods: {
-    async uploadFile (e) {
+    async uploadFile(e) {
       const formData = new FormData()
       formData.append('file', this.file)
       await this.$api.uploadFile(formData)
-    }
-  }
+    },
+  },
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
