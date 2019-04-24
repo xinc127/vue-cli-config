@@ -29,4 +29,6 @@
   
 ### 6. mixin 使用
 
-### 7.
+### 7. vuex 使用
+
+### 8. prettier&&eslint

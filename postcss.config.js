@@ -1,3 +1,5 @@
+/** @format */
+
 module.exports = {
   plugins: {
     autoprefixer: {},
@@ -8,7 +10,7 @@ module.exports = {
       viewportUnit: 'vw',
       selectorBlackList: [],
       minPixelValue: 1,
-      mediaQuery: false
-    }
-  }
+      mediaQuery: false,
+    },
+  },
 }

@@ -1,8 +1,8 @@
 export default {
   data: {
-    message: 'hello-mixin'
+    message: 'hello-mixin',
   },
-  mounted () {
+  mounted() {
     console.log('mixin内---' + this.message)
-  }
+  },
 }

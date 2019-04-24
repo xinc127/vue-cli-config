@@ -11,5 +11,5 @@ import uploadFile from './uploadFile'
 // 导出接口
 export default {
   uploadFile,
-  article
+  article,
 }

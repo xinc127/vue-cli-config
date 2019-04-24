@@ -18,5 +18,5 @@ export default {
 `
   },
   entryTemplate: `export { default } from './main.vue'
-`
+`,
 }

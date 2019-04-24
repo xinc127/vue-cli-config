@@ -5,11 +5,11 @@ import { Toast } from 'cube-ui'
  */
 let needLoadingRequestCount = 0
 
-function loading (str) {
+function loading(str) {
   let toast = Toast.$create({
     txt: 'Loading...',
     mask: true,
-    time: 0
+    time: 0,
   })
 
   if (str === 'start') {

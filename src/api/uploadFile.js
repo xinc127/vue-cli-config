@@ -5,7 +5,7 @@ const uploadFile = formData => {
     method: 'post',
     url: '/upload',
     data: formData,
-    headers: { 'Content-Type': 'multipart/form-data' }
+    headers: { 'Content-Type': 'multipart/form-data' },
   })
 }
 
