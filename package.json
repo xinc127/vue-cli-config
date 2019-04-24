@@ -49,11 +49,8 @@
     "pre-commit": "eslint \"src/**/*.{js,ts,vue}\""
   },
   "lint-staged": {
-    "linter": {
       "*.{js, json, css, vue}": [
-        "prettier --write",
-        "eslint"
+        "prettier --write"
       ]
-    }
   }
 }

@@ -82,7 +82,7 @@ import { mapState, mapMutations } from 'vuex';
 import { getShopTypes, msiteAddress } from '@/api/api'
 
 export default {
-  data {
+  data() {
     return {
       sortType: 'food', // 下拉标签
       sortTypes: [],
