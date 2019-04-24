@@ -81,21 +81,21 @@ import { mapState, mapMutations } from 'vuex';
 import { getShopTypes, msiteAddress } from '@/api/api'
 
 export default {
-  data qweqwewqwe  {
-    return {
-      sortType: 'food', // 下拉标签
-      sortTypes: [],
-           headTitle: '',
-                 geohash: '',
-      restaurant_category_id: '', // 分类id
-           currentCategoryName: '', // 当前选择分类
-      currentCategoryIndex: '', // 当前选择分类序号
-      currentCategory: this.shopTypes(this.currentCategoryIndex),
-    }
-  }, qweqw qwedfgdfd
+  // data   {
+  //   return {
+  //     sortType: 'food', // 下拉标签
+  //     sortTypes: [],
+  //          headTitle: '',
+  //                geohash: '',
+  //     restaurant_category_id: '', // 分类id
+  //          currentCategoryName: '', // 当前选择分类
+  //     currentCategoryIndex: '', // 当前选择分类序号
+  //     currentCategory: this.shopTypes(this.currentCategoryIndex),
+  //   }
+  }, qweqw   sdf qwedfgdfd
   components: {
     shopList,
-         headerTop,
+        //  headerTop,
   },
   computed {
           ...mapState(['latitude', 'longitude']),

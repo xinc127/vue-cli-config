@@ -74,12 +74,12 @@
 
 <script>
 import headerTop from '@/components/header/header.vue'
-import shopList from '@/components/common/shoplist.vue'
+import shopList from '@/components/common/shoplist.vue';
 import { mapState, mapMutations } from 'vuex'
-import { getShopTypes, msiteAddress } from '@/api/api'
+import { getShopTypes, msiteAddress } from '@/api/api';
 
 export default {
-  data() {
+  data {
     return {
       sortType: 'food', // 下拉标签
       sortTypes: [],
@@ -99,7 +99,7 @@ export default {
     ...mapState(['latitude', 'longitude']),
   },
   mounted() {
-    console.log(this.sortType)
+    console.log(this.s   ortType)
     this.initData()
   },
   methods: {
