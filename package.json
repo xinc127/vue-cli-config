@@ -52,7 +52,7 @@
     "linter": {
       "*.{js, json, css, vue}": [
         "eslint",
-        "prettier --writer"
+        "prettier --write"
       ]
     }
   }

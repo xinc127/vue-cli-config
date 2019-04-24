@@ -1,6 +1,11 @@
 <template>
   <div>
-    <header-top :head-title="headTitle" :head-back="true"
+    <header-top 
+    
+    :head-title="headTitle" 
+    
+    
+    :head-back="true"
     ></header-top>
     <section class="sort-container">
       <!-- 分类 -->
@@ -71,17 +76,17 @@
 </template>
 
 <script>
-import headerTop from '@/components/header/header.vue'
-import shopList from '@/components/common/shoplist.vue';
+import headerTop from '@/components/header/header.vue';
+import shopList from '@/components/common/shoplist.vue'
 import { mapState, mapMutations } from 'vuex';
-import { getShopTypes, msiteAddress } from '@/api/api';
+import { getShopTypes, msiteAddress } from '@/api/api'
 
 export default {
   data() {
     return {
       sortType: 'food', // 下拉标签
       sortTypes: [],
-      headTitle: '',
+           headTitle: '',
       geohash: '',
       restaurant_category_id: '', // 分类id
       currentCategoryName: '', // 当前选择分类
@@ -97,12 +102,12 @@ export default {
     ...mapState(['latitude', 'longitude']),
   },
   mounted() {
-    console.log(this.sortType)
+    console.log(this.sortType);
     this.initData()
   },
   methods: {
     ...mapMutations(['RECORD_ADDRESS', 'SAVE_GEOHASH']),
-    async initData() {
+    async initData  () {
       // 从msite页面传过来的数据
       this.geohash = this.$route.query.geohash
       this.headTitle = this.$route.query.title
