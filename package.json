@@ -51,8 +51,8 @@
   "lint-staged": {
     "linter": {
       "*.{js, json, css, vue}": [
-        "eslint",
-        "prettier --write"
+        "prettier --write",
+        "eslint"
       ]
     }
   }
