@@ -50,10 +50,7 @@
   },
   "lint-staged": {
     "linters": {
-      "*.{js, json, css, vue}": [
-        "prettier --write",
-        "eslint"
-      ]
+      "*.{js,scss}": ["eslint"]
     }
   }
 }
