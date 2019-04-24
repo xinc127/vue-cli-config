@@ -52,8 +52,7 @@
     "linter": {
       "*.{js, json, css, vue}": [
         "eslint",
-        "prettier --writer",
-        "git add"
+        "prettier --writer"
       ]
     }
   }
