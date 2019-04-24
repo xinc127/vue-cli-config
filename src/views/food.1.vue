@@ -81,7 +81,7 @@ import { mapState, mapMutations } from 'vuex';
 import { getShopTypes, msiteAddress } from '@/api/api'
 
 export default {
-  data   {
+  data     {
     return {
       sortType: 'food', // 下拉标签
       sortTypes: [],
@@ -92,12 +92,12 @@ export default {
       currentCategoryIndex: '', // 当前选择分类序号
       currentCategory: this.shopTypes(this.currentCategoryIndex),
     }
-  },
+  },  
   components: {
     shopList,
          headerTop,
   },
-  computed: {
+  computed {
           ...mapState(['latitude', 'longitude']),
   },
   mounted() {
