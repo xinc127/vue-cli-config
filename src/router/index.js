@@ -22,6 +22,12 @@ const defaultRoutes = [
     component: () =>
       import(/* webpackChunkName: "login" */ '@/views/Login.vue'),
   },
+  {
+    path: '/icons',
+    name: 'icons',
+    component: () =>
+      import(/* webpackChunkName: "icons" */ '@/views/Icons.vue'),
+  },
 ]
 
 let routes = []

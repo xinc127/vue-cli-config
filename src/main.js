@@ -12,6 +12,8 @@ import 'normalize.css/normalize.css' // css 样式重置模板
 import './styles/index.scss' // 全局的 css
 import './cube-ui'
 
+import './icons' // svg
+
 Vue.config.productionTip = false
 // 挂载 api 到 vue 实例
 Vue.prototype.$api = api
