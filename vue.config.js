@@ -14,7 +14,6 @@ module.exports = {
   lintOnSave: process.env.NODE_ENV === 'development',
   productionSourceMap: false,
   configureWebpack: {
-    name: name,
     resolve: {
       alias: {
         '@': resolve('src'),
