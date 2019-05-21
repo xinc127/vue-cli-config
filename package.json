@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "new:comp": "node ./scripts/generateComponent",
-    "new:view": "node ./scripts/generateView"
+    "new:view": "node ./scripts/generateView",
+    "format": "prettier --write \"**/*.js\" \"src/**/*.vue\""
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
@@ -54,6 +55,14 @@
     "cube-ui": {
       "transform": "cube-ui/src/modules/${member}",
       "kebabCase": true
+    }
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js, vue}": ["eslint", "prettier --write"]
     }
   }
 }
